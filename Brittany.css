@@ -1,0 +1,439 @@
+@-ms-viewport {
+    width: device-width;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body,
+p {
+    padding: 0;
+    margin: 0;
+    font-family: 'PT Sans';
+    font-size: 20px;
+    line-height: 28px;
+}
+
+p a {
+    text-decoration: none;
+    color: pink;
+}
+
+
+
+.typewriter #logo h1 {
+    float: left;
+    font-family: 'Lacquer', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: pink;
+    overflow: hidden;
+    padding: 0;
+    line-height: 80px;
+    height: 100px;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .10em solid black;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    margin-left: 10px;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation: typing 1.0s steps(40, end), blink-caret .5s step-end infinite;
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 25%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: none
+    }
+}
+
+h1 {
+    font-size: 26px;
+    line-height: 42px;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 22px;
+    line-height: 36px;
+    font-family: 'Lacquer', sans-serif;
+    font-weight: 300;
+}
+
+#header {
+    height: 85px;
+    display: transparent;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    background-color: whitesmoke;
+    border-bottom: 5px solid pink;
+}
+
+#navigation {
+    display: block;
+    margin-left: 0px;
+    text-align: right;
+    margin-top: 15px;
+}
+
+#mainnav {
+    font-size: 0px;
+}
+
+#mainnav li {
+    display: inline-block;
+    margin: 15px;
+}
+
+#mainnav li::last-child {
+    margin-right: 0px;
+}
+
+#mainnav li a {
+    text-decoration: red;
+    color: black;
+    font-size: 15px;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+#mainnav li a:hover {
+    color: slategrey;
+}
+
+.double-space {
+    height: 80px;
+}
+
+.landing img {
+    width: 99.2%;
+    height: 700px;
+    overflow: hidden;
+    border: solid;
+    border-width: 5px;
+    border-radius: 5px;
+    border-color: whitesmoke;
+    border-right: 10px;
+}
+
+#uriane {
+    height: 816px;
+    width: 1056px;
+}
+
+
+.section {
+    height: 100%;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 5px;
+    border-color: whitesmoke;
+}
+
+.darker {
+    background-color: darkcyan;
+}
+
+.lighter {
+    background-color: #fff;
+}
+
+#beyond-code {
+    background: url(https://images.pexels.com/photos/6708774/pexels-photo-6708774.jpeg?cs=srgb&dl=pexels-rodnae-productions-6708774.jpg&fm=jpg)  0 repeat fixed;
+}
+
+#about {
+    background: url(https://images.pexels.com/photos/6708774/pexels-photo-6708774.jpeg?cs=srgb&dl=pexels-rodnae-productions-6708774.jpg&fm=jpg)  0 repeat fixed;
+}
+
+.centered-wrapper {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1250px;
+    overflow: hidden;
+}
+
+.section.darker h1 {
+    color: black;
+}
+
+.section.darker h2 {
+    color: white;
+}
+
+.section.darker p {
+    color: black;
+}
+
+.section.lighter h1 {
+    color: whitesmoke;
+}
+
+.section.lighter h2 {
+    color: whitesmoke;
+}
+
+.section.lighter p {
+    color: black;
+}
+
+.section p.box {
+    text-align: center;
+}
+
+.section.lighter p.box {
+    background-color: rgba(255, 255, 255, 255);
+}
+
+
+.section .box {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.box {
+    padding: 25px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+}
+
+
+iframe {
+    z-index: 1;
+    pointer-events: none;
+}
+
+.thumbnail iframe {
+    width: 700px;
+    height: 500px;
+}
+
+.thumbnail {
+    position: relative;
+    transform: scale(0.50);
+    transform-origin: 0 0;
+    -o-transform: scale(0.50);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.50);
+    -webkit-transform-origin: 0 0;
+}
+
+.thumbnail:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.thumbnail-container {
+    cursor: pointer;
+    width: calc(700px * 0.50);
+    height: calc(500px * 0.50);
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+
+.thumbnail iframe {
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+}
+
+#MTM-Thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    width: 600px;
+    height: 600px;
+    z-index: 5;
+}
+
+input {
+    width: 50%;
+    height: 12px;
+    padding: 12px 20px;
+    border: 10px solid darkslategrey;
+    border-radius: 40px;
+    background-color: black;
+    font-size: 15px;
+    color: white;
+}
+
+button {
+    font-size: 12px;
+    font-weight: 500;
+    width: 100px;
+    color: whitesmoke;
+    border: solid;
+    border-radius: 5px;
+    border-color: darkslategrey;
+    background-color: black;
+}
+
+textarea {
+    width: 50%;
+    height: 100px;
+    overflow: hidden;
+    padding: 12px 20px;
+    border: 10px solid darkslategrey;
+    border-radius: 40px;
+    background-color: black;
+    font-size: 16px;
+    color: white;
+}
+
+
+@media screen and (max-width: 818px) {
+
+    .column,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    #navigation {
+        display: inline-block;
+        font-size: 15px;
+    }
+
+    .typewriter #logo h1 {
+        font-size: 25px;
+        float: revert;
+    }
+
+    #mainnav li {
+        display: none;
+    }
+
+    .landing img {
+        width: 99.5%;
+    }
+
+    body{
+        margin: 0 auto;
+    }
+
+    .section .box {
+        width: 100%;
+        margin-left: revert;
+    }
+
+    #uriane {
+        height: 700px;
+        width: 100%;
+    }
+
+    #main-img {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 818px) {
+    #main-img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .centered-wrapper {
+        width: 94% !important;
+    }
+
+    #navigation {
+        display: inline-block;
+        width: 100%;
+        top: 81px;
+        background: #e9e9e9;
+        position: relative;
+        z-index: 9999;
+        text-align: center;
+    }
+
+    .typewriter #logo h1 {
+        float: revert;
+    }
+    .landing img {
+        height: 600px;
+    }
+
+    #uriane {
+        display: none;
+    }
+
+    #main-img {
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: pink;
+    color: slategrey;
+    text-align: center;
+    font-size: 15px;
+    margin-top: auto;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Archivo Black", sans-serif;
+    margin: 5px;
+}
+
+footer a:hover {
+    color: slategrey;
+}
