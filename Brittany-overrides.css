@@ -12,3 +12,6 @@
 .work .section-head{grid-template-columns:220px 1fr;align-items:start}
 .work-heading .lede{margin:28px 0 0;justify-self:auto;max-width:520px}
 @media(max-width:760px){.work .section-head{display:block}.work-heading .lede{margin-top:24px}}
+
+.work-heading h2 small{display:block;margin-top:30px;max-width:560px;color:var(--soft);font:500 clamp(18px,2vw,28px)/1.35 Archivo,Arial,sans-serif;letter-spacing:-.5px}
+@media(max-width:760px){.work-heading h2 small{margin-top:24px;font-size:20px}}
