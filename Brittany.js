@@ -1,12 +1,2 @@
-const that = this;
-setTimeout(function (){
-    that.style.opacity = 1;
-}, 500);
-
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-XXXXX-Y', 'auto');
-ga('send', 'pageview');
+const header=document.querySelector('.topbar');window.addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>30),{passive:true});
+const name='Uriane Robinson',target=document.querySelector('#type-name');let i=0;target.textContent='';const type=()=>{if(i<name.length){target.textContent+=name[i++];setTimeout(type,75)}};setTimeout(type,450);
