@@ -9,7 +9,11 @@
 .c4{font-size:18px}.milhouse{font-size:24px}.ewb{background:var(--cyan);color:#062023;border-color:var(--cyan)}.dev{border-radius:50%}
 @media(max-width:760px){.cards,.company-grid{grid-template-columns:1fr}.about-copy>p{font-size:18px}.experience .section-head{display:block}}
 
-.work .section-head{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:end}
-.work-heading{min-width:0;text-align:left}
-.work-heading h2 small{display:block;margin:28px 0 0;padding:0;width:100%;color:var(--soft);font-family:inherit;font-weight:500;font-size:clamp(18px,2vw,28px);line-height:1.35;letter-spacing:-.5px;text-align:left}
-@media(max-width:760px){.work .section-head{display:block}.work-heading h2 small{margin-top:24px;font-size:20px}}
+/* Keep the section marker left; center the statement across the full section. */
+.work .section-head{display:grid;grid-template-columns:minmax(0,1fr);align-items:start;gap:32px}
+.work .section-head>.kicker{justify-self:start;text-align:left;margin:0}
+.work-heading{width:100%;max-width:1050px;min-width:0;justify-self:center;text-align:center}
+.work-heading h2{font-size:clamp(36px,5vw,75px);text-align:center}
+.work-heading h2>span,.work-heading h2>em{display:block;text-wrap:balance}
+.work-heading h2 small{display:block;margin:28px auto 0;padding:0;width:100%;max-width:640px;color:var(--soft);font-family:inherit;font-weight:500;font-size:clamp(18px,2vw,28px);line-height:1.35;letter-spacing:normal;text-align:center;text-wrap:balance}
+@media(max-width:760px){.work .section-head{gap:28px}.work-heading h2{letter-spacing:-1.5px}.work-heading h2 small{margin-top:24px;font-size:20px}}
