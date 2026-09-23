@@ -8,3 +8,7 @@
 .company span{display:block;margin-top:8px;color:var(--soft);font-size:12px;line-height:1.5}
 .c4{font-size:18px}.milhouse{font-size:24px}.ewb{background:var(--cyan);color:#062023;border-color:var(--cyan)}.dev{border-radius:50%}
 @media(max-width:760px){.cards,.company-grid{grid-template-columns:1fr}.about-copy>p{font-size:18px}.experience .section-head{display:block}}
+
+.work .section-head{grid-template-columns:220px 1fr;align-items:start}
+.work-heading .lede{margin:28px 0 0;justify-self:auto;max-width:520px}
+@media(max-width:760px){.work .section-head{display:block}.work-heading .lede{margin-top:24px}}
