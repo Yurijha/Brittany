@@ -1,0 +1,10 @@
+.about-copy>p{font-size:20px;line-height:1.55;margin-bottom:24px}
+.skills{margin-top:38px}
+.experience{background:#071719}
+.company-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.company{display:flex;align-items:center;gap:20px;padding:20px;border:1px solid var(--line);background:#0b2226}
+.company-mark{width:58px;height:58px;display:grid;place-items:center;flex:none;border:1px solid #ffffff42;color:var(--cyan);font:700 13px 'Space Mono';letter-spacing:-1px}
+.company b{display:block;font-size:13px;letter-spacing:1px}
+.company span{display:block;margin-top:8px;color:var(--soft);font-size:12px;line-height:1.5}
+.c4{font-size:18px}.milhouse{font-size:24px}.ewb{background:var(--cyan);color:#062023;border-color:var(--cyan)}.dev{border-radius:50%}
+@media(max-width:760px){.cards,.company-grid{grid-template-columns:1fr}.about-copy>p{font-size:18px}.experience .section-head{display:block}}
