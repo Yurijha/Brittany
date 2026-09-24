@@ -13,6 +13,29 @@
     #experience .section-head > .lede{justify-self:start;margin-left:10%;margin-right:0;text-align:left;max-width:none;width:90%}
     @media(max-width:760px){#experience .section-head > .lede{margin-left:0}}
   </style>
+<style>
+    .contact-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8%;align-items:start}
+    .contact-intro h2{font-size:clamp(38px,4vw,64px);margin-bottom:24px}
+    .contact-description{max-width:410px;color:var(--soft);font-size:18px;line-height:1.6;margin:0 0 24px}
+    .contact-email{display:inline-block;color:var(--cyan);font-size:clamp(18px,2vw,26px);overflow-wrap:anywhere;border-bottom:1px solid var(--cyan);padding-bottom:6px}
+    .contact-details{display:flex;flex-wrap:wrap;gap:28px 40px;margin:38px 0 0}
+    .contact-details dt{font:10px 'Space Mono',monospace;letter-spacing:1.5px;color:var(--cyan);margin-bottom:10px}
+    .contact-details dd{margin:0;color:var(--soft);font-size:14px;line-height:1.7}
+    .contact-form{min-width:0;background:var(--panel);border:1px solid var(--line);padding:clamp(20px,3vw,36px)}
+    .contact-fields{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}
+    .contact-field{display:flex;flex-direction:column;gap:10px;margin-bottom:24px;min-width:0}
+    .contact-field label{font-size:13px;font-weight:600}
+    .contact-field input,.contact-field textarea{width:100%;min-width:0;border:1px solid #ffffff35;border-radius:0;background:#071719;color:var(--white);padding:14px;font:inherit;font-size:16px;line-height:1.5}
+    .contact-field textarea{resize:vertical;min-height:170px}
+    .contact-field input::placeholder,.contact-field textarea::placeholder{color:var(--soft);opacity:.8}
+    .contact-field input:focus-visible,.contact-field textarea:focus-visible,.contact button:focus-visible,.contact a:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}
+    .contact-submit{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+    .contact-submit button{border:0;cursor:pointer;min-height:48px}
+    .contact-submit button:hover{background:#78e6e0}
+    .contact-submit p{font-size:12px;line-height:1.5;color:var(--soft);max-width:200px;margin:0}
+    @media(max-width:900px){.contact-layout{grid-template-columns:1fr;gap:40px}}
+    @media(max-width:480px){.contact-fields{grid-template-columns:1fr;gap:0}}
+  </style>
 </head>
 <body>
   <header class="topbar"><a class="brand" href="#top">DEV <span>URIANE</span></a><nav><a href="#work">Work</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav><a class="resume" href="https://raw.githubusercontent.com/Yurijha/Dev-Uriane/master/Uriane%20Robinson%20-%20Dev%20Uriane%20.pdf" target="_blank" rel="noopener">Résumé ↗</a><button class="menu" aria-label="Open menu">☰</button></header>
@@ -21,6 +44,28 @@
     <section id="work" class="work section"><div class="section-head"><p class="kicker">01 / SELECTED WORK</p><div class="work-heading"><h2><span>Different disciplines.</span><em>One way of thinking.</em><small>Turning complex problems into clear, useful experiences.</small></h2></div></div><div class="cards"><article class="card featured"><div class="card-visual cyan-grid"><span>01</span><b>EWB CHICAGO</b></div><div class="card-info"><p>Systems · Communications · Digital Strategy</p><h3>Engineering impact into a movement.</h3><a href="#contact">View the approach ↗</a></div></article><article class="card"><div class="card-visual portrait"><span>02</span></div><div class="card-info"><p>Web · SEO · MarTech</p><h3>Websites that clarify the signal.</h3><a href="#contact">Explore the work ↗</a></div></article><article class="card"><div class="card-visual dark-grid"><span>03</span><b>APPARITION</b></div><div class="card-info"><p>Creative Technology · Content</p><h3>Designed gameplay. Designed attention.</h3><a href="#contact">See the thinking ↗</a></div></article></div></section>
     <section id="about" class="about section"><div><p class="kicker">02 / ABOUT URIANE</p><h2>Curious about<br><em>how things work.</em></h2></div><div class="about-copy"><p>Hello, I’m Uriane Robinson—a software engineer and digital marketer who enjoys working where structure, communication, and creative problem-solving overlap.</p><p>My background spans web development, SEO, analytics, paid media, CMS strategy, aerospace engineering, and community leadership through Engineers Without Borders Chicago.</p><p>I’m not interested in making technology feel more complicated than it needs to be. I like finding the signal, building the system, and making the result useful to real people.</p><div class="skills"><span>FRONT-END</span><span>SEO & ANALYTICS</span><span>CONTENT SYSTEMS</span><span>ENGINEERING</span><span>PAID MEDIA</span><span>CREATIVE DIRECTION</span></div></div></section>
     <section id="experience" class="experience section"><div class="section-head"><div><p class="kicker">03 / SELECTED ENVIRONMENTS</p><h2>Different rooms.<br><em>Same systems mind.</em></h2></div><p class="lede">A few of the teams and contexts that shaped how I work.</p></div><div class="company-grid"><div class="company"><div class="company-mark c4">C·4</div><div><b>C-4 ANALYTICS</b><span>Digital marketing · Paid search · Reporting</span></div></div><div class="company"><div class="company-mark milhouse">M</div><div><b>MILHOUSE</b><span>Web content · SEO · Analytics</span></div></div><div class="company"><div class="company-mark whs">WHS</div><div><b>WORLD HAIR SYSTEM</b><span>Webmaster · Content marketing</span></div></div><div class="company"><div class="company-mark ewb">EWB</div><div><b>EWB CHICAGO</b><span>President · Communications · Impact</span></div></div><div class="company"><div class="company-mark dev">DU</div><div><b>DEV URIANE</b><span>Independent engineering · Digital strategy</span></div></div></div></section>
-    <section id="contact" class="contact section"><p class="kicker">04 / LET'S BUILD SOMETHING USEFUL</p><h2>Have a problem<br>worth solving?</h2><a class="email" href="mailto:devuriane@gmail.com">devuriane@gmail.com ↗</a><footer><span>© 2026 DEV URIANE</span><span>DESIGNED & BUILT WITH INTENT</span><a href="#top">BACK TO TOP ↑</a></footer></section>
+    <section id="contact" class="contact section">
+      <p class="kicker">04 / LET'S BUILD SOMETHING USEFUL</p>
+      <div class="contact-layout">
+        <div class="contact-intro">
+          <h2>Have a problem<br>worth solving?</h2>
+          <p class="contact-description">Tell me about your project, your team, or the opportunity you have in mind.</p>
+          <a class="contact-email" href="mailto:urianer2@outlook.com">urianer2@outlook.com ↗</a>
+          <dl class="contact-details">
+            <div><dt>BUSINESS HOURS</dt><dd>Monday–Saturday<br>1:30–8:00 pm CST</dd></div>
+            <div><dt>PHONE</dt><dd><a href="tel:+17088018855">(708) 801-8855</a></dd></div>
+          </dl>
+        </div>
+        <form class="contact-form" action="https://formsubmit.co/urianer2@outlook.com" method="POST" target="_blank" rel="noopener">
+          <div class="contact-fields">
+            <div class="contact-field"><label for="contact-name">Name</label><input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Your name" required></div>
+            <div class="contact-field"><label for="contact-email">Email</label><input id="contact-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></div>
+          </div>
+          <div class="contact-field"><label for="contact-message">Message</label><textarea id="contact-message" name="message" rows="7" placeholder="What would you like to work on together?" required></textarea></div>
+          <div class="contact-submit"><button class="button" type="submit">Send message <span aria-hidden="true">↗</span></button><p>All fields required. Submission opens in a new tab.</p></div>
+        </form>
+      </div>
+      <footer><span>© 2026 DEV URIANE</span><span>DESIGNED & BUILT WITH INTENT</span><a href="#top">BACK TO TOP ↑</a></footer>
+    </section>
   </main><script src="Brittany.js"></script>
 </body></html>
