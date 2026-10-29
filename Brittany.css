@@ -1,1 +1,50 @@
 :root{--bg:#071719;--panel:#0c2428;--cyan:#3dd6d0;--soft:#a7c5c4;--white:#edf4ef;--line:#ffffff1b;font-family:Archivo,Arial,sans-serif;color:var(--white);background:var(--bg)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg)}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}.topbar{height:82px;position:fixed;z-index:10;inset:0 0 auto;padding:0 5%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid transparent;transition:.3s}.topbar.scrolled{background:#071719e8;backdrop-filter:blur(16px);border-color:var(--line)}.brand{font:700 16px 'Space Mono';letter-spacing:2px}.brand span{color:var(--cyan)}nav{display:flex;gap:35px;font-size:13px}.topbar nav a:hover,.text-link:hover,footer a:hover{color:var(--cyan)}.resume{border:1px solid #ffffff50;padding:11px 16px;font-size:12px}.menu{display:none;background:none;border:0}.hero{min-height:100svh;position:relative;display:flex;align-items:center;padding:130px 11% 90px;overflow:hidden;border-bottom:1px solid var(--line)}.hero-art{position:absolute;inset:0;background:linear-gradient(90deg,#071719f2 0%,#071719d0 42%,#07171952),url('https://raw.githubusercontent.com/Yurijha/Dev-Uriane/master/Uriane%20Robinson%20-%20Dev%20Uriane.jpg') center right/cover no-repeat;filter:saturate(.72);z-index:-1}.hero:after{content:'';position:absolute;inset:0;background:linear-gradient(120deg,transparent 0 55%,#3dd6d015 75%,transparent);pointer-events:none}.hero-copy{max-width:720px}.kicker{font:11px 'Space Mono';letter-spacing:2px;color:var(--cyan);margin:0 0 25px}.hero h1{font-size:clamp(48px,8vw,122px);line-height:.98;letter-spacing:-6px;margin:0 0 35px;font-weight:700}.hero h1 i{display:inline-block;width:13px;height:13px;background:var(--cyan);margin-left:10px;animation:blink 1s steps(2) infinite}.intro{font-size:clamp(20px,2.3vw,31px);line-height:1.25;max-width:620px;color:#dce9e5;margin:0 0 35px}.hero-actions{display:flex;align-items:center;gap:30px}.button{background:var(--cyan);color:#062023;padding:15px 20px;font-size:12px;font-weight:700}.button span{margin-left:26px}.text-link{font-size:13px}.hero-meta{position:absolute;bottom:28px;left:5%;right:5%;display:flex;justify-content:space-between;color:#a3bbbb;font:10px 'Space Mono';letter-spacing:1px}.section{padding:135px 11%;border-bottom:1px solid var(--line)}.section-head{display:grid;grid-template-columns:1fr 1fr;align-items:end;margin-bottom:70px}.section h2{font-size:clamp(40px,5vw,75px);line-height:1.03;letter-spacing:-3px;margin:0}.section h2 em{font-style:normal;color:var(--cyan)}.lede{color:var(--soft);max-width:370px;line-height:1.7;justify-self:end}.cards{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:18px}.card{background:var(--panel);min-height:390px;display:flex;flex-direction:column;border:1px solid var(--line);transition:transform .3s,border-color .3s}.card:hover{transform:translateY(-8px);border-color:#3dd6d06b}.card-visual{height:235px;position:relative;padding:24px;overflow:hidden;background:#0c2d31}.card-visual span{font:12px 'Space Mono';color:var(--cyan)}.card-visual b{position:absolute;bottom:22px;left:24px;font:18px 'Space Mono';letter-spacing:1px}.cyan-grid{background:linear-gradient(135deg,#103e43,#0c2529),repeating-linear-gradient(45deg,#3dd6d010 0 1px,transparent 1px 24px)}.dark-grid{background:radial-gradient(circle at 70% 30%,#2b8c8c66,transparent 32%),#09191c}.portrait{background:linear-gradient(0deg,#071719aa,transparent),url('https://raw.githubusercontent.com/Yurijha/Dev-Uriane/master/Uriane%20Robinson%20-%20Dev%20Uriane.jpg') center/cover}.card-info{padding:24px}.card-info p{font:10px 'Space Mono';color:var(--cyan);letter-spacing:1px}.card h3{font-size:22px;line-height:1.15;margin:20px 0 30px}.card-info a{font-size:12px;color:var(--soft)}.about{display:grid;grid-template-columns:1fr 1fr;gap:10%;background:#0a2024}.about-copy{padding-top:40px}.about-copy>p{font-size:22px;line-height:1.45;color:#dbe7e3;margin:0 0 28px}.skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:45px}.skills span{border:1px solid #ffffff35;padding:10px 12px;font:10px 'Space Mono';color:var(--soft)}.contact{min-height:72vh;display:flex;flex-direction:column;justify-content:center}.contact h2{margin-bottom:45px}.email{font-size:clamp(24px,4vw,58px);color:var(--cyan);border-bottom:1px solid var(--cyan);width:max-content}.contact footer{margin-top:130px;display:flex;justify-content:space-between;color:#9bb4b3;font:10px 'Space Mono';letter-spacing:1px}.contact footer a{color:var(--white)}@keyframes blink{50%{opacity:0}}@media(max-width:760px){.topbar{height:70px}.topbar nav,.resume{display:none}.menu{display:block;border:1px solid #ffffff40;padding:8px 11px}.hero{padding:120px 8% 110px}.hero-art{background-position:65% center}.hero h1{letter-spacing:-3px}.hero-meta{left:8%;right:8%;font-size:8px}.hero-meta span:nth-child(2){display:none}.section{padding:95px 8%}.section-head,.about{display:block}.lede{margin-top:25px}.cards{grid-template-columns:1fr}.card{min-height:330px}.card-visual{height:190px}.about-copy{padding-top:35px}.about-copy>p{font-size:19px}.contact footer{display:grid;gap:17px;margin-top:90px}.email{font-size:27px}}
+
+
+/* Accessibility and responsive navigation */
+.skip-link {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 100;
+  padding: 12px 16px;
+  color: #062023;
+  background: var(--cyan);
+  transform: translateY(-160%);
+}
+.skip-link:focus { transform: translateY(0); }
+:where(a, button, input, textarea, iframe):focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 4px;
+}
+.menu { cursor: pointer; }
+@media (max-width: 760px) {
+  .topbar { gap: 12px; }
+  .topbar nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    padding: 18px 8% 24px;
+    background: #071719f7;
+    border-bottom: 1px solid var(--line);
+    flex-direction: column;
+    gap: 0;
+  }
+  .topbar.nav-open nav { display: flex; }
+  .topbar nav a {
+    display: block;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .topbar nav a:last-child { border-bottom: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
