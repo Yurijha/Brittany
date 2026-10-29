@@ -289,3 +289,7 @@
 #top:focus {
   outline: none;
 }
+/* Keep the homepage footer in its existing position, without a divider above it. */
+body > .site-footer {
+  border-top: 0;
+}
