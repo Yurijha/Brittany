@@ -285,3 +285,7 @@
 .about {
   background: linear-gradient(-60deg, transparent 0 55%, #3dd6d045 75%, transparent), #0a2024;
 }
+/* Avoid a mouse-triggered fragment-focus outline around the entire homepage; preserve keyboard-visible focus. */
+#top:focus:not(:focus-visible) {
+  outline: none;
+}
