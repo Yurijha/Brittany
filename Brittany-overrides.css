@@ -266,3 +266,17 @@
   .business-development-copy > p:not(.kicker) { font-size: 16px; }
   .business-development-preview { min-height: 270px; }
 }
+
+/* Expanded service portfolio: full-stack engineering, account management, and project delivery. */
+.service-card-wide { grid-column: auto; }
+.service-card h3 { max-width: 95%; }
+.service-card p { overflow-wrap: anywhere; }
+@media (min-width: 901px) {
+  .service-card:last-child { grid-column: span 2; }
+}
+@media (max-width: 900px) {
+  .service-card:last-child { grid-column: span 2; }
+}
+@media (max-width: 760px) {
+  .service-card:last-child { grid-column: auto; }
+}
