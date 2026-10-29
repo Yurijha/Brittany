@@ -8,6 +8,12 @@
       content="Uriane Robinson, the software engineer and digital marketer behind Dev Uriane. Explore work in web development, SEO, digital strategy, and creative technology."
     />
     <meta name="author" content="Uriane Robinson" />
+    <meta name="theme-color" content="#071719" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Uriane Robinson | Software Engineer &amp; Digital Marketer" />
+    <meta property="og:description" content="Engineering, digital strategy, analytics, business development, and creative technology—connected by systems thinking." />
+    <meta property="og:url" content="https://yurijha.github.io/Brittany/" />
+    <link rel="canonical" href="https://yurijha.github.io/Brittany/" />
     <title>
       Uriane Robinson | Software Engineer &amp; Digital Marketer | Dev Uriane
     </title>
@@ -257,9 +263,10 @@
     </style>
   </head>
   <body>
+    <a class="skip-link" href="#top">Skip to content</a>
     <header class="topbar">
       <a class="brand" href="#top">DEV <span>URIANE</span></a>
-      <nav>
+      <nav id="primary-navigation" aria-label="Primary navigation">
         <a href="#work">Work</a><a href="#about">About</a
         ><a href="#experience">Experience</a><a href="#contact">Contact</a>
       </nav>
@@ -269,9 +276,9 @@
         target="_blank"
         rel="noopener"
         >Résumé ↗</a
-      ><button class="menu" aria-label="Open menu">☰</button>
+      ><button class="menu" type="button" aria-label="Open menu" aria-controls="primary-navigation" aria-expanded="false">☰</button>
     </header>
-    <main id="top">
+    <main id="top" tabindex="-1">
       <section class="hero">
         <div class="hero-art"></div>
         <div class="hero-copy">
@@ -491,6 +498,10 @@
                 <dt>PHONE</dt>
                 <dd><a href="tel:+17088018855">(708) 801-8855</a></dd>
               </div>
+              <div>
+                <dt>EMAIL</dt>
+                <dd><a href="mailto:devuriane@gmail.com">devuriane@gmail.com</a></dd>
+              </div>
             </dl>
           </div>
           <form
@@ -538,7 +549,7 @@
               <button class="button" type="submit">
                 Send message <span aria-hidden="true">↗</span>
               </button>
-              <p>All fields required. Submission opens in a new tab.</p>
+              <p>All fields required. The form is submitted through FormSubmit.</p>
             </div>
           </form>
         </div>
