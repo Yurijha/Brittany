@@ -281,7 +281,7 @@
   .service-card:last-child { grid-column: auto; }
 }
 
-/* Match the hero's cyan sweep in About, with enough contrast to read against the section background. */
+/* Reverse the cyan sweep so the lighter area sits toward the About heading and the paragraph side stays darker. */
 .about {
-  background: linear-gradient(120deg, transparent 0 55%, #3dd6d045 75%, transparent), #0a2024;
+  background: linear-gradient(-60deg, transparent 0 55%, #3dd6d045 75%, transparent), #0a2024;
 }
