@@ -280,3 +280,8 @@
 @media (max-width: 760px) {
   .service-card:last-child { grid-column: auto; }
 }
+
+/* Echo the hero's subtle cyan sweep in About to distinguish it from Business Development. */
+.about {
+  background: linear-gradient(120deg, transparent 0 55%, #3dd6d015 75%, transparent), #0a2024;
+}
