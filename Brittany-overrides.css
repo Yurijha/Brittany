@@ -289,7 +289,11 @@
 #top:focus {
   outline: none;
 }
-/* Keep the homepage footer in its existing position, without a divider above it. */
+/* Match the contact page's footer separation: divider belongs to the footer, not the experience section. */
+#experience {
+  border-bottom: 0;
+}
+
 body > .site-footer {
-  border-top: 0;
+  border-top: 1px solid var(--line);
 }
